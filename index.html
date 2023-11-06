@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>Sign up</title>
+    <script src="C:\zeeshan\Front end\work\singup\page.js"></script>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(bk.png);
+            
+        }
+        #box {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 5px 20px 50px;
+            background: url(ssd.jpg) ;
+/*            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);*/
+            background-repeat: no-repeat;
+            opacity: 0.96;
+            background-size: 24rem;
+        }
+        #dash p{
+        color: white;
+        font-size: 39px;
+        position: relative;
+        top: 2vh;
+        left: 5vw;
+        }    
+        #signn1{
+            color: black;
+            font-size: 2.3em;
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            top: 9vh;
+            left: 40vw;
+        }
+        #log{
+            position: relative;
+            top: 12vh;
+            color: #fff;
+            font-size: 1.3em;
+            justify-content: center;
+            display: flex;
+            margin: 0px;
+            font-weight: bold;
+        }
+        #box input{
+            width: 60%;
+            height: 20px;
+            background: #e0dede;
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            padding: 10px;
+            border:none;
+            outline: none;
+            border-radius: 3px;
+            position: relative;
+            top: 11vh;
+            font-size: 1em;
+        }
+        #btn{
+            width: 31%;
+            height: 34px;
+            margin: 10px auto;
+            justify-content: center;
+            display: block;
+            color: #fff;
+            background: #573b8a;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            position: relative;
+            top: 12vh;
+            left: 10.5vw;
+            cursor: pointer;
+            transition: 0.1s;
+        } 
+        #btn:hover{
+            background: #6d44b8;
+            scale: 1.1;
+        }     
+        #alre{
+            color: #ffffff;
+            font-weight: 50;
+            text-decoration: none;
+            position: relative;
+            top: 12vh;
+            left: 5.5vw;
+            font-size: 0.93em;
+            transition: 0.1s;
+       }
+       #alre:hover{
+            color: #fff;
+            font-size: 1em;
+            left: 5.3vw;
+        } 
+        #proc{
+            color: #black;
+            font-size: 2em;
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            font-weight: bold;
+            position: relative;
+            top: 10vh;
+        }
+        #cp p{
+        color: black;
+        font-size: larger;
+        margin: auto;
+        position: relative;
+        top: -3vh;
+        left: 6vw;
+        }
+        a{
+            color: #32c671;
+            font-weight: 450;
+        }
+        #dash{
+            height: 100%;
+            width: 100%;
+        }
+        #cp{
+            background-color: white;
+            height: 32vh;
+            width: 27vw;
+            margin: auto;
+            position: relative;
+            top: 25vh;
+            box-shadow: 5px 20px 50px;
+            border-radius: 10px;
+            box-shadow: 5px 20px 50px;
+        }
+        #cp img{
+            height: 11%;
+            width: 6.5%;
+            position: relative;
+            top: 0.9vh;
+            left: 21.2vw;
+            filter: brightness(1.1);
+        }
+    </style>
+<body >
+    <div id="box" style="display: ;">
+    <h1 id="signn1">Sign up</h1>
+        <center><p id="log">Enter Username</p></center>
+        <input type="text" name="data" id="data" style="height: 25px; width: 240px;" required autofocus>
+        <button id="btn" style="margin-top: 10px; margin-left: -27px;" onclick="show()">Submit</button>
+        <a href="C:\zeeshan\Front end\work\singup\singup.html" id="alre">Already have an account?</a>
+    </div>
+    <div id="dash" style="display: none;">
+        <div id="cp">
+            <h1 id="proc">Profile created</h1>
+            <img src="https://e7.pngegg.com/pngimages/930/741/png-clipart-round-green-check-mark-illustration-check-mark-bottle-material-green-tick-miscellaneous-angle.png">
+            <p>Return to <a href="C:\zeeshan\Front end\work\singup\singup.html">log in</a> page</p>
+        </div> 
+</body>
+</html>

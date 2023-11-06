@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="C:\zeeshan\Front end\work\singup\dash.css">
+</head>
+<style>
+
+</style>	
+<body background="bk.png">
+	<a href="C:\zeeshan\Front end\work\singup\singup.html">Log out</a>
+    <div class="card">
+        <div class="imgBx">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" id="pp">
+        </div>
+        <div class="newc">
+        	<div class="crcls">
+        		<div class="circles"><p class="text">0<br>Follows</p></div>
+        		<div class="circles" id="posts"><p class="text">0<br>Posts</p></div>
+        		<div class="circles" style="background-color: #DF0A42;"><p class="text">0<br>Follwers</p></div>
+        	</div>
+        </div>
+        <div class="content">
+            <div class="details">
+                <h2 id="name">Zeeshan</h2><span id="prof">zeeshan@gmail.com</span>
+                <div class="data">
+                    <h3>Email<br><span id="email">zeeshan@gmail.com</span></h3>
+                    <h3>Phone<br><span id="number">7440479719</span></h3>
+                    <h3>Password<br><span id="pass" style="display: none;">zeexshan.com1643</span></h3>
+                    <input type="checkbox" id="show" onclick="hide()"> 
+                </div>
+                <div class="button">
+                    <label for="update" class="updimg">Update Image</label>
+                    <input type="file" name="" accept="image/jpeg, image/png, image/jpg" id="update">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+	<script>
+		var datase = JSON.parse(localStorage.getItem('datase'));
+			console.log(datase);
+		var prop = datase[2];
+		var pass = datase[1];
+		var name = datase[0];
+		var mail = datase[3];
+		var prof = datase[4];
+			console.log();
+			document.getElementById('pass').innerHTML = pass;
+			document.getElementById('name').innerHTML = name;
+			document.getElementById('number').innerHTML = prop;
+			document.getElementById('email').innerHTML = mail;
+			document.getElementById('prof').innerHTML = prof;
+		function hide() 
+		{
+			var passwordField = document.getElementById('pass');
+			var showPasswordCheckbox = document.getElementById('show');
+			if (showPasswordCheckbox.checked) 
+			{
+				passwordField.style.display = "block";
+			} 
+			else 
+			{
+				passwordField.style.display = "none";
+			}
+		}
+		let ppic = document.getElementById('pp');
+        let inputFile = document.getElementById('update');
+        	inputFile.onchange = function () 
+        	{
+        		ppic.src = URL.createObjectURL(inputFile.files[0]);
+     		}
+</script>
